@@ -1,8 +1,105 @@
-body{
+html,
+body {
     min-height: 100%;
     padding: 0;
     margin: 0;
     font-family: Roboto, Arial, sans-serif;
     font-size: 14px;
-    color: rgb(12, 39, 221);
+    color: rgb(10, 47, 235);
+}
+
+h1 {
+    margin: 0 0 20px;
+    font-weight: 400;
+    color: rgb(12, 41, 224);
+}
+
+label {
+    margin: 0 0 0px;
+    font-weight: 50;
+    color: rgb(77, 12, 229);
+    font-size: 12px;
+}
+
+p {
+    margin: 0 0 5px;
+}
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    background-image: url("imgage/anhnen.jpg");
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+
+}
+
+form {
+    padding: 25px;
+    margin: 25px;
+    width: 50%;
+    box-shadow: 0 2px 5px #f5f5f5;
+    background: #a6c8df;
+    border: 2px solid rgb(20, 5, 234);
+    border-radius: 8px;
+}
+
+input,
+textarea {
+    width: calc(50% - 18px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 2px solid seagreen;
+    border-radius: 4px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #666;
+}
+
+input {
+    display: block;
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: rgb(119, 187, 239);
+    font-size: 16px;
+    font-weight: 400;
+    color: #1142ef;
+}
+
+button:hover {
+    background: rgb(23, 6, 208);
+}
+
+@media screen and (max-width: 600px) {
+    .main-block {
+        flex-direction: row;
+    }
+}
+
+.left-part,
+form {
+    width: 50%;
+}
+
+.result {
+    position: absolute;
+    visibility: visible;
+    top: 70%;
+    right: 25%;
+    width: 15%;
+    height: 15%;
+    border: 3px solid rgb(40, 15, 230);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #f5f5f5;
+    text-align: center;
 }
