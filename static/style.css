@@ -31,7 +31,7 @@ p {
     justify-content: center;
     align-items: center;
     min-height: 75vh;
-    background-image: url("imgage/anhnen.jpg");
+    background-image: url("/image/anhnen.jpg");
     background-size: cover;
     /* Resize the background image to cover the entire container */
 
